@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model GuestContact
+@*@{
+        ViewData["Title"] = "Contact";
+    }
+    <h2>@ViewData["Title"]</h2>
+    <h3>@ViewData["Message"]</h3>*@
+
+<p>Hello guest</p>
+
+<p>Name: @Model.Name</p>
+<p>Email: @Model.Email</p>
+<p>Phone number: @Model.Phone</p>
+
+<form asp-controller="Home" asp-action="Contact" method="post">
+    <p>Name: <input asp-for="Name" /></p>
+    <p>Email: <input asp-for="Email" /></p>
+    <p>Phone number: <input asp-for="Phone" /></p>
+
+    <button type="submit">Submit</button>
+</form>
+
