@@ -9,8 +9,7 @@ namespace MVC_Start.Controllers
 {
   public class HomeController : Controller
   {
-    public IActionResult Index(int id)
-    
+    public IActionResult Index(int id)    
         {
       return View();
     }
@@ -24,15 +23,15 @@ namespace MVC_Start.Controllers
         {
             GuestContact contact = new GuestContact();
 
-            contact.Name = "Manish Agrawal";
-            contact.Email = "magrawal@usf.edu";
+            contact.Name = "Angela Jones";
+            contact.Email = "ajones8@usf.edu";
             contact.Phone = "813-974-6716";
 
             /* alternate syntax to initialize object 
             GuestContact contact2 = new GuestContact
             {
-              Name = "Manish Agrawal",
-              Email = "magrawal@usf.edu",
+              Name = "Angela Jones",
+              Email = "ajones8@usf.edu",
               Phone = "813-974-6716"
             };
             */
