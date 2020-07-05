@@ -10,7 +10,10 @@ namespace MVC_Start.Models
     public string Name { get; set; }
     public string Email { get; set; }
     public string Phone { get; set; }
-  }
+    public string Fax { get; set; }
+    public string University { get; set; }
+    public string State { get; set; }
+    }
 
   public class ChartModel
   {

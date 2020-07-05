@@ -26,6 +26,9 @@ namespace MVC_Start.Controllers
             contact.Name = "Angela Jones";
             contact.Email = "ajones8@usf.edu";
             contact.Phone = "813-974-6716";
+            contact.Fax = "813-555-5555";
+            contact.University = "USF";
+            contact.State = "Florida";
 
             /* alternate syntax to initialize object 
             GuestContact contact2 = new GuestContact

@@ -16,10 +16,15 @@
 <p>Email: @Model.Email</p>
 <p>Phone number: @Model.Phone</p>
 
+<p>Please enter your contact information below</p>
+
 <form asp-controller="Home" asp-action="Contact" method="post">
     <p>Name: <input asp-for="Name" /></p>
     <p>Email: <input asp-for="Email" /></p>
     <p>Phone number: <input asp-for="Phone" /></p>
+    <p>Fax number: <input asp-for="Fax" /></p>
+    <p>University: <input asp-for="University" /></p>
+    <p>State: <input asp-for="State" /></p>
 
     <button type="submit">Submit</button>
 </form>
